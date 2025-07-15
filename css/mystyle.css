@@ -1,0 +1,92 @@
+/* mystyle.css file for Springtime in Michigan webpage created by Coleen*/
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:20px;
+}
+h1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #0b5345;
+    text-align: center;
+    font-size:30px;
+}
+header {
+    background-color:#fcf3cf;/*light-yellow*/
+    padding: 1rem;
+}
+.nav-row {
+    background-color:#b6d7a8;
+    color:#134f5c;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 80%;
+    justify-content: space-between;
+}
+/* Here is the style for the list in navigation */
+nav ul li {
+    display: inline-block;
+    width: 130px;
+    text-align: left;
+}
+main {
+    background-color:#fbeee6;
+    font-size:20px;
+}
+footer {
+    background-color:#f8f9f9;
+    color:black;
+}
+
+/*style all paragrpahs */
+p {
+    background-color:#d5f5e3;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+}
+/*To keep the skip link always visible*/ 
+.skip-link {
+    display: block;
+    background-color: lightblue;
+    color: black;
+    padding:0.75em;
+    text-align: left;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:2rem;
+
+}
+/* To style the image inside the nav, using a decendent selector, witha width of 10% */
+nav img {
+    width: 10%;
+}
+/* unvisited link*/
+a:link {
+    color: navy;
+}
+/* mouse over link*/ 
+a:hover {
+    color: hotpink;
+}
+/*Style the grid class, 2 columns, each 40% */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 1rem; /*adding space between columns*/
+}
+.grid img {
+    width: 100%; /* each image fills its grid cell*/
+    height: auto;
+    border-radius: 8px; /*rounded corner*/
+}
+/* Add hover animation for the imgaes*/
+.grid img:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
+}
+/*Use flex to experience with flex-wrap & justify-content */
+.flex {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    gap: 1rem;
+}
